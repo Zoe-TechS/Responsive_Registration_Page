@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100&family=Poppins:wght@400;500;600;700&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+  font-size: 16px;
+  font-family: 'Poppins';
+}
+.begin {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(bg-intro-mobile.png);
+  background-color: hsl(0, 100%, 74%);
+  padding: 100px 0;
+}
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 0 30px;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+.message {
+  flex: 1;
+  margin-bottom: 45px;
+}
+.registration {
+  flex: 1;
+}
+.message h1 {
+  color: white;
+  font-size: 30px;
+  line-height: 48px;
+  margin-bottom: 22px;
+  padding: auto;
+}
+.message p {
+  color: white;
+  font-size: 17px;
+  line-height: 30px;
+}
+.registration .reg-top {
+  background-color: hsl(248, 32%, 49%);
+  color: white;
+  padding: 15px 30px;
+  border-radius: 15px;
+  box-shadow: 0px 7px hsl(249, 10%, 26%, 0.2);
+  margin-bottom: 30px;
+}
+.registration .reg-top p {
+  font-size: 18px;
+  line-height: 32px;
+}
+.registration .reg-top p span {
+  font-weight: 700;
+}
+.registration .form-content {
+  background-color: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0px 7px hsl(249, 10%, 26%, 0.2);
+}
+.field-group {
+  position: relative;
+  margin-bottom: 25px;
+}
+.registration label {
+  display: none;
+}
+.registration input {
+  width: 100%;
+  height: 58px;
+  margin-bottom: 5px;
+  border-radius: 7px;
+  border: 1px solid hsl(246, 25%, 77%);
+  padding-left: 19px;
+  outline: none;
+  color: (249, 10%, 26%);
+  font-family: 'Poppins';
+  font-size: 17px;
+  font-weight: 600;
+}
+.registration input::placeholder {
+  color: hsl(249, 10%, 26%, 0.2);
+  font-size: 16px;
+  font-weight: 600;
+  font-family: 'Poppins';
+}
+.registration input:focus {
+  border: 1.4px solid hsl(249, 10%, 26%);
+}
+.registration button {
+  width: 100%;
+  height: 58px;
+  margin-bottom: 5px;
+  border-radius: 7px;
+  border: none;
+  outline: none;
+  background-color: hsl(154, 59%, 51%);
+  color: white;
+  box-shadow: 0px 3.5px hsl(154, 59%, 51%,0.4);
+  font-family: 'Poppins';
+  font-size: 17px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  margin-bottom: 0;
+}
+.registration button:hover {
+  cursor: pointer;
+  background-color: hsl(154, 70%, 60%);
+}
+.registration .form-footer {
+  margin-top: 10px;
+  color: hsl(246, 25%, 77%);
+}
+.registration .form-footer span {
+  color: hsl(0, 100%, 74%);
+  font-weight: 700;
+}
+.error-icon {
+  position: absolute;
+  top: 28%;
+  right: 20px;
+}
+.error-text {
+  text-align: right;
+  font-size: 14px;
+  color: hsl(0, 100%, 74%);
+  font-weight: 500;
+}
+.error-text, .error-icon {
+  display: none;
+}
+.field-group.error .error-text,
+.field-group.error .error-icon {
+  display: block; 
+}
+.field-group.error input {
+  border: 2px solid 
+}
+@media screen and (min-width: 1000px) {
+  .intro-begin {
+    background-image: url(bg-intro-desktop.png);
+  }
+  .content {
+    flex-direction: row;
+  }
+  .message {
+    text-align: left;
+    padding-right: 50px;
+  }
+  .message h1 {
+    font-size: 50px;
+    line-height: 60px;
+  }
+  .message p {
+    font-size: 17px;
+    padding-right: 20px;
+  }
+  .registration {
+    max-width: 500px;
+  }
+  .registration .reg-top p {
+    font-size: 16px;
+  }
+  .registration .reg-top {
+    padding: 20px;
+  }
+  .registration .form-content {
+    padding: 40px;
+  }
+  .registration input,
+  .registration :-ms-input-placeholder {
+    font-size: 16px;
+  }
+  .registration .form-footer {
+    margin-top: 20px;
+    font-size: 12px;
+  }
+}
